@@ -61,6 +61,10 @@
     width: 300px;
     padding: 50px;
 }
+.local:hover{
+    transform: scale(1.5);
+    transition: 3s;
+}
 .principal p {
     padding: 50px;
 }
@@ -77,8 +81,17 @@
      width: 300px;
      padding: 50px;
  }
+.mapa:hover{
+    transform: scale(1.2);
+    transition: 4s;
+}
  .VIANDAS {
      padding: 10px;
+     height: 250px;
+     transition: height 2s;
+ }
+ .VIANDAS:hover {
+     height: 300px;
  }
  .viandasv{ 
      padding: 30px;
