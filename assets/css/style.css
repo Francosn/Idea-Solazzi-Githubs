@@ -1,0 +1,110 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 100px 100px auto 100px;
+    grid-template-areas: "header header header"
+                         "nav nav nav"
+                         "main main main"
+                         "footer footer footer";
+}
+
+.encabezado {
+    background-color: black;
+    color: green;
+    text-align: center;
+    display: block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    grid-area: header;
+}
+.navegador {
+    background-color: black;
+    padding: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    grid-area: nav;
+    
+}
+.nav__ul {
+    list-style: none;
+}
+.opciones {
+    color: white;
+    padding: 5px;
+
+}
+.principal{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie {
+    background-color: black;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    padding: 40px;
+    grid-area: footer;
+    justify-content: center;
+    align-items: center;
+}
+.local {
+    width: 300px;
+    padding: 50px;
+}
+.principal p {
+    padding: 50px;
+}
+.principal h3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.principal h5 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.formulario{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+ .mapa {
+     width: 300px;
+     padding: 50px;
+ }
+ .VIANDAS {
+     padding: 10px;
+ }
+ .viandasv{ 
+     padding: 30px;
+ }
+
+ @media (min-width: 320px){
+    .contenedor {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 100px auto 100px;
+        grid-template-areas: "header"
+                             "nav"
+                             "main"
+                             "footer";
+
+    }
+}
+@media (min-width: 1200px) {
+    .contenedor {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: 100px 100px auto 100px;
+        grid-template-areas: "header header header header"
+                             "nav nav nav nav"
+                             "main main main main"
+                             "footer footer footer footer";
+
+    }
+}
